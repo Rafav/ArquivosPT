@@ -1,4 +1,4 @@
-async function clickAndWait(enlace,extractedNumber) {
+async function clickAndWait(enlace) {
     return new Promise(resolve => {
         Sys.Application.add_load(function() {
             // Buscar enlaces con el patrón especificado
@@ -26,8 +26,7 @@ async function clickAndWait(enlace,extractedNumber) {
 	match = enlace.getAttribute('href').match(regex);
 
     if (match) {
-        let extractedNumber = match[1];
-        await clickAndWait(enlace,extractedNumber);
+        await clickAndWait(enlace);
     } else {
         console.log('No se encontró el patrón deseado.');   //Enlace a la imagen de la portada por ejemplo  que solo tiene el legajo
     }
