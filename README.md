@@ -14,7 +14,7 @@ Google Chrome 88 o superior
 
 ## Uso
 
-Una vez localizada la lista de ejemplares, click en el icono de la extensión y pinchar en Descargar. La ruta del documento debe ser *.arquivos.pt/viewer?id 
+Abre el documento en el visor de Digitarq (la ruta debe ser `*.arquivos.pt/fileViewer/…`), pulsa el icono de la extensión y haz click en **Descargar todo**. La extensión obtiene la lista de imágenes desde la API del archivo y las descarga todas en una carpeta con el código de referencia del documento.
 
 
 ## Licencia

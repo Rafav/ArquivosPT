@@ -1,18 +1,17 @@
 {
     "manifest_version": 3,
     "name": "Arquivos de Portugal",
-    "version": "1.0.0",
-    "description": "Descarga masiva de ArquivosPT",
+    "version": "2.0.0",
+    "description": "Descarga masiva de ArquivosPT (Digitarq)",
     "permissions": [
       "activeTab",
-      "scripting",
       "downloads"
+    ],
+    "host_permissions": [
+      "*://*.arquivos.pt/*"
     ],
     "action": {
       "default_popup": "popup.html",
-      "matches": [
-        "*://*.arquivos.pt/viewer?id=*"
-      ],
       "default_icon": {
         "16": "img/icon16.png",
         "48": "img/icon48.png",
